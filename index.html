@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html class="dark">
+<html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" href="pomodoro.css">
-        <link rel="stylesheet" href="https://unpkg.com/papercss@latest/dist/paper.min.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="asset/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon-16x16.png">
-        <link rel="manifest" href="asset/site.webmanifest">
+        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="paper" id="container">
-            <h4>Game Switch Timer</h4>
-            <div id="timer">
-                <label id="timerText"></label>
+        <div id="container">
+            <h3 class="title">Game Switch Timer</h3>
+            <div class="nes-container is-dark">
+              <p>
+                <h3 id="timer">
+                    <label id="timerText"></label>
+                </h3>
+              </p>
             </div>
+
 
             <div id="controls">
                 <!-- <button class="btn-danger-outline" name="changegame" onclick="countdown(1500);"></button> -->
-                <button class="btn-success-outline" name="shortBreak" onclick="countdown(600);">10 Min</button>
-                <button class="btn-secondary-outline" name="longBreak" onclick="countdown(900);">15 Min</button>
-                <button class="btn-block btn-primary-outline" name="stop" onclick="stopTimer();">STOP</button>
+                <button class="nes-btn is-primary" onclick="countdown(600);">10 Min</button>
+                <button class="nes-btn is-warning" onclick="countdown(900);">15 Min</button>
+                <br>
+                <button class="nes-btn is-error" onclick="stopTimer();">STOP</button>
             </div>
 
             <audio id="alarm" src="asset/SEGA.mp3" preload="auto"></audio>
@@ -30,7 +32,9 @@
         </div>
 
     <footer>
-        <a href="https://github.com/BinaryDigitDev/gametimer">Code</a>
-    </footer>
+        <a href="https://twitch.tv/KilobyteKeith"><i class="nes-icon twitch is-medium"></i></a>
+        <a href="https://github.com/BinaryDigitDev/gametimer">  <i class="nes-icon github is-medium"></i></a>
+            </footer>
+    <br>
     </body>
 </html>
