@@ -6,7 +6,7 @@ function publishTimer(timer) {
 
     const timerElement = document.getElementById("timerText");
     timerElement.innerHTML = timer;
-    document.title = "[" + timer + "] Pomodoro Timer";
+    document.title = "[" + timer + "] Timer";
 }
 
 function stopTimer() {
