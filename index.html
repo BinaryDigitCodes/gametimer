@@ -4,12 +4,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" href="pomodoro.css">
-        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+        <link href="nes.css" rel="stylesheet" />
     </head>
     <body>
+
         <div id="container">
-            <h3 class="title">Game Switch Timer</h3>
+            
             <div class="nes-container is-dark">
+                <h3 class="title">Game Timer</h3>
               <p>
                 <h3 id="timer">
                     <label id="timerText"></label>
@@ -19,7 +21,6 @@
 
 
             <div id="controls">
-                <!-- <button class="btn-danger-outline" name="changegame" onclick="countdown(1500);"></button> -->
                 <button class="nes-btn is-primary" onclick="countdown(600);">10 Min</button>
                 <button class="nes-btn is-warning" onclick="countdown(900);">15 Min</button>
                 <br>
@@ -32,9 +33,11 @@
         </div>
 
     <footer>
-        <a href="https://twitch.tv/KilobyteKeith"><i class="nes-icon twitch is-medium"></i></a>
-        <a href="https://github.com/BinaryDigitDev/gametimer">  <i class="nes-icon github is-medium"></i></a>
-            </footer>
+        <small>
+        <a href="https://twitch.tv/KilobyteKeith">Twitch</a> | 
+        <a href="https://github.com/BinaryDigitDev/gametimer">GitHub</a>
+        <small>
+    </footer>
     <br>
     </body>
 </html>
